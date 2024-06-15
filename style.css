@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Shadows Into Light", cursive;
+  --blue-color: #3e92cc;
+}
+
+body {
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 97vh;
+}
+
+#game-options {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#game-options p {
+  margin: 10px auto;
+}
+
+h1 {
+  color: var(--blue-color);
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+#board-sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+h2 {
+  color: var(--blue-color);
+  margin: 50px auto 20px auto;
+}
+
+.btn-size {
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 3rem;
+  margin: 0 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.btn-size:hover {
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, .32);
+  transform: translateY(-5px);
+}
+
+#play {
+  display: none;
+  flex-direction: column;
+}
+
+#scores {
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.score-wrapper {
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.score-wrapper p {
+  margin: 0 auto;
+}
+
+#message {
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+  margin: 5px auto;
+  height: 400px;
+  width: 400px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px 1px #9d9e9f;
+  cursor: pointer;
+  justify-content: center;
+}
+
+#hint p {
+  font-family: var(--font-family);
+  font-size: 1.7rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#retry {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-retry {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 black;
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  margin: 15px auto;
+  padding: 10px 10px;
+  transition: ease-out 0.5s;
+}
+
+#btn-retry:hover, #btn-retry:focus {
+  border: 2px solid var(--blue-color);
+  box-shadow: inset 0 -100px 0 0 var(--blue-color);
+  color: white;
+}

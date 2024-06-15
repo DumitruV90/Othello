@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Othello</title>
+  </head>
+  <body>
+    <section id="game-options">
+      <h1>Othello</h1>
+      <p>Have you ever played it? If not, read about the game below:</p>
+      <a href="https://es.wikipedia.org/wiki/Reversi" target="_blank">Reversi, othello, otelo or yang</a>
+      <h2>Select the board size:</h2>
+      <div id="board-sizes">
+        <button class="btn-size">6 x 6</button>
+        <button class="btn-size">8 x 8</button>
+        <button class="btn-size">10 x 10</button>
+      </div>
+    </section>
+    <section id="play">
+      <div id="scores">
+        <div class="score-wrapper">
+          <p><strong>Black score</strong></p>
+          <p id="black-score">Black score</p>
+        </div>
+        <div class="score-wrapper">
+          <p><strong>White score</strong></p>
+          <p id="white-score">Black score</p>
+        </div>
+      </div>
+      <div id="message"></div>
+      <div id="board"></div>
+      <div id="hint">
+        <p>Hint: Click any green circle</p>
+      </div>
+      <div id="retry">
+        <button id="btn-retry">Play again</button>
+      </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/moves.js"></script>
+    <script src="./js/scores.js"></script>
+  </body>
+</html>
